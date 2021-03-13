@@ -1,0 +1,143 @@
+.tabs{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    border-bottom: 2px solid hsl(205, 78%, 60%);
+    font-family: Ubuntu, Cantarell, 'Open Sans';
+}
+
+.tabs > li{
+    padding: 0.5em 1em;
+    margin: 0 1em;
+}
+
+.current{
+    background: white;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid hsl(205, 78%, 60%);
+    border-bottom: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.content {
+    padding: 1em 2em;
+}
+.section {
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    padding: 2rem;
+}
+.section:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    color: #000;
+    padding: 0.375rem 0.75rem;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    transition: all 0.3s linear;
+    font-size: 0.875rem;
+    border: 2px solid #000;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+}
+.btn:hover {
+    color: #fff;
+    background: #000;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background: hsl(205, 86%, 81%);
+    border-color: transparent;
+    flex: 0 0 5rem;
+    display: grid;
+    align-items: center;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    cursor: pointer;
+    content: hsl(205, 78%, 60%);
+    transition: all 0.3s linear;
+    font-size: 0.85rem;
+}
+.btn:hover {
+    background: hsl(210, 22%, 49%);
+    color: #fff;
+}
+.list {
+    padding: 0.25rem;
+    padding-left: 1rem;
+    background: hsl(210, 36%, 96%);
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-color: transparent;
+    font-size: 1rem;
+    flex: 1 0 auto;
+    color: hsl(210, 22%, 49%);
+}
+.list::placeholder {
+    font-family: Ubuntu, Cantarell, 'Open Sans';
+    color: hsl(210, 22%, 49%);
+}
+.container {
+    margin-top: 2rem;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s linear;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    text-transform: capitalize;
+}
+.item:hover {
+    color: hsl(210, 22%, 49%);
+    background: hsl(210, 36%, 96%);
+}
+.item:hover .title {
+    color: hsl(210, 22%, 49%);
+}
+.title {
+    margin-bottom: 0;
+    color: hsl(209, 61%, 16%);
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+}
+.edit,
+.delete {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin: 0 0.15rem;
+    transition: all 0.3s linear;
+}
+.edit {
+    color: hsl(125, 71%, 66%);
+}
+.edit:hover {
+    color: hsl(125, 67%, 44%);
+}
+.delete {
+    color: hsl(360, 71%, 66%);
+}
+.delete:hover {
+    color: hsl(360, 67%, 44%);
+}
